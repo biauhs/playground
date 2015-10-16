@@ -27,6 +27,7 @@
 
     <modules>
         <module>utils</module>
+        <module>swing</module>
     </modules>
 
     <dependencyManagement>
