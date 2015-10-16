@@ -1,4 +1,4 @@
-package locks;
+package com.rao.playground.utils.locks;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

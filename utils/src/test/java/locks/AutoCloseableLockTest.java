@@ -1,5 +1,6 @@
 package locks;
 
+import com.rao.playground.utils.locks.AutoCloseableLock;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
