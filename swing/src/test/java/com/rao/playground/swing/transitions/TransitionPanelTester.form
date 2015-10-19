@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.rbsfm.trade.fxo.swingrichui.TransitionPanelTester">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="447"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="575b1" binding="topPanel" layout-manager="GridBagLayout">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="2e1ca" binding="centrePanel" layout-manager="GridBagLayout">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="51d7c" class="com.rbsfm.trade.fxo.swingrichui.CardTransitionPanel" binding="transitionPanel" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <grid id="ed722" binding="bottomPanel" layout-manager="GridBagLayout">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1a8e1" class="javax.swing.JButton" binding="startTransitionButton">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag top="4" left="4" bottom="4" right="4" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Start Transition"/>
+            </properties>
+          </component>
+          <component id="412ca" class="javax.swing.JSeparator">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="8" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag top="4" left="0" bottom="4" right="0" weightx="1.0" weighty="0.0"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="cdf44" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="4" left="4" bottom="4" right="4" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Manual Control"/>
+            </properties>
+          </component>
+          <component id="e63c7" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="4" left="4" bottom="4" right="4" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Orientation"/>
+            </properties>
+          </component>
+          <component id="4840a" class="javax.swing.JRadioButton" binding="horizontalRadioButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="Horizontal"/>
+            </properties>
+          </component>
+          <component id="a6d58" class="javax.swing.JRadioButton" binding="verticalRadioButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Vertical"/>
+            </properties>
+          </component>
+          <component id="3be38" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="4" left="4" bottom="4" right="4" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Animation Speed"/>
+            </properties>
+          </component>
+          <component id="45bae" class="javax.swing.JSlider" binding="flipSpeedSlider">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <maximum value="2000"/>
+              <minimum value="100"/>
+              <minorTickSpacing value="100"/>
+              <paintLabels value="true"/>
+              <paintTicks value="true"/>
+              <value value="100"/>
+              <valueIsAdjusting value="false"/>
+            </properties>
+          </component>
+          <component id="6f994" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="4" left="4" bottom="4" right="4" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Animation Position"/>
+            </properties>
+          </component>
+          <component id="57ce5" class="javax.swing.JSlider" binding="transitionPositionSlider">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag top="4" left="4" bottom="4" right="4" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <minimum value="0"/>
+              <minorTickSpacing value="10"/>
+              <paintLabels value="true"/>
+              <paintTicks value="true"/>
+              <value value="10"/>
+            </properties>
+          </component>
+          <component id="bb8ce" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="4" left="4" bottom="4" right="4" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Direction"/>
+            </properties>
+          </component>
+          <component id="97029" class="javax.swing.JRadioButton" binding="forwardRadioButton">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="Forward"/>
+            </properties>
+          </component>
+          <component id="f9a20" class="javax.swing.JRadioButton" binding="backwardRadioButton">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Backward"/>
+            </properties>
+          </component>
+          <component id="8aa5b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="4" left="4" bottom="4" right="4" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Transition Type"/>
+            </properties>
+          </component>
+          <component id="18de6" class="javax.swing.JRadioButton" binding="flipRadioButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="Flip"/>
+            </properties>
+          </component>
+          <component id="28d4" class="javax.swing.JRadioButton" binding="slideRadioButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Slide"/>
+            </properties>
+          </component>
+          <component id="24201" class="javax.swing.JRadioButton" binding="fadeRadioButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Fade"/>
+            </properties>
+          </component>
+          <component id="d31e6" class="javax.swing.JButton" binding="nextButton" default-binding="true">
+            <constraints>
+              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag top="4" left="4" bottom="4" right="4" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Next"/>
+            </properties>
+          </component>
+          <component id="f193a" class="javax.swing.JButton" binding="doTransitionButton">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="8" left="8" bottom="8" right="8" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Do Transition"/>
+            </properties>
+          </component>
+          <component id="fa11f" class="javax.swing.JCheckBox" binding="flipIntoDistanceCheckBox">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="Flip Into Distance"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="flipAxisButtonGroup">
+      <member id="4840a"/>
+      <member id="a6d58"/>
+    </group>
+    <group name="flipDirectionButtonGroup">
+      <member id="97029"/>
+      <member id="f9a20"/>
+    </group>
+    <group name="transitionTypeButtonGroup">
+      <member id="18de6"/>
+      <member id="28d4"/>
+      <member id="24201"/>
+    </group>
+  </buttonGroups>
+</form>
